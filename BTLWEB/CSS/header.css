@@ -1,0 +1,243 @@
+﻿/* header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    margin-bottom: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.header .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.header .inner-social ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+    .header .inner-social ul li a {
+        color: var(--color-text);
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+.header .inner-social .ig {
+    position: relative;
+}
+
+    .header .inner-social .ig::before {
+        content: "|";
+        position: absolute;
+        top: 0px;
+        left: -5px;
+        font-size: 20px;
+    }
+
+.header .inner-logo img {
+    width: 50px;
+}
+
+.header .inner-user {
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+    .header .inner-user i {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .header .inner-user .user {
+        position: relative;
+        margin:0 15px;
+    }
+
+        .header .inner-user .user::before {
+            content: "|";
+            position: absolute;
+            top: -2px;
+            left: -5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    .header .inner-user .inner-search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+        .header .inner-user .inner-search .input {
+            border: 0.5px solid #000;
+            border-radius: 10px;
+            font-size: 12px;
+            padding: 10px;
+           padding-right: 33px;
+            
+        }
+        .header .inner-user .inner-search .btn {
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            position: absolute;
+            top: 6px;
+            right: 1px;
+            width: 33px;
+            padding: 0;
+
+        }
+
+        .header .inner-menu {
+            margin-top: 0px;
+        }
+
+.header .inner-menu {
+    border-bottom: 1px solid var(--color-text);
+    border-top: 1px solid var(--color-text);
+}
+
+    .header .inner-menu ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 5px;
+    }
+
+        .header .inner-menu ul li a {
+            font-size: 12px;
+            font-weight: bold;
+            color: var(--color-text);
+        }
+
+            .header .inner-menu ul li a:hover {
+                font-weight: normal;
+            }
+.menu-toggle-btn {
+    display: none;
+    /* Phải cao hơn z-index của header */
+}
+
+@media (max-width: 768px) {
+
+    /* --- PHẦN HEADER TRÊN (Social, Logo, User) --- */
+
+    /* Xếp chồng 3 khối này lên nhau */
+    .header .inner-wrap {
+        flex-direction: column;
+        align-items: center; /* Căn giữa */
+        gap: 15px; /* Thêm khoảng cách */
+        padding-top: 15px;
+    }
+
+    /* Ẩn các icon social cho gọn (tùy chọn) */
+    .header .inner-social {
+        display: none;
+    }
+
+        /* Ẩn các đường gạch dọc "|" */
+        .header .inner-social .ig::before,
+        .header .inner-user .user::before {
+            display: none;
+        }
+
+    /* Đảm bảo thanh search không quá rộng */
+    .header .inner-user {
+        margin-right: 0;
+        width: 90%;
+        justify-content: center;
+    }
+
+        .header .inner-user .inner-search {
+            flex-grow: 1; /* Cho thanh search chiếm hết không gian còn lại */
+        }
+
+            .header .inner-user .inner-search .input {
+                width: 100%; /* Input full-width */
+            }
+
+
+    /* --- PHẦN MENU CHÍNH (Nav) --- */
+
+    /* 1. Hiển thị nút hamburger */
+    .menu-toggle-btn {
+        display: block;
+        /* Điều chỉnh lại vị trí top cho khớp với logo */
+        position: absolute; /* Đặt nút này liên quan đến header */
+        top: 25px; /* Điều chỉnh vị trí (ví dụ) */
+        right: 20px;
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: #000;
+        cursor: pointer;
+        z-index: 1000000;
+    }
+
+    /* 2. Ẩn menu chính đi */
+    .header .inner-menu {
+        display: none;
+        /* Định dạng khi nó xuất hiện */
+        position: absolute;
+        top: 100%; /* Ngay bên dưới header */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #eee;
+    }
+
+        /* 3. Đây là LỚP (class) MÀ JAVASCRIPT SẼ THÊM VÀO */
+        /* Khi menu CÓ class 'is-active', nó sẽ hiện ra */
+        .header .inner-menu.is-active {
+            display: block;
+        }
+
+        /* 4. Định dạng lại danh sách menu khi xổ xuống */
+        .header .inner-menu ul {
+            flex-direction: column; /* Xếp dọc */
+            align-items: center; /* Căn giữa */
+            width: 100%;
+            padding: 15px 0;
+            margin: 0;
+            gap: 10px; /* Khoảng cách giữa các mục */
+        }
+
+            .header .inner-menu ul li a {
+                padding: 10px 20px; /* Tăng vùng nhấn cho dễ */
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+    /* 5. Quan trọng: Vì header cao hơn, đẩy nội dung trang xuống */
+    /* Bạn cần thêm một class .body-content (hoặc tương tự)
+       cho nội dung bên dưới header và thêm padding-top cho nó */
+
+    /* Ví dụ, nếu bạn có <main> hoặc <section class="hero">
+       ngay sau header, bạn cần làm thế này: */
+
+    .hero {
+        /* Lấy chiều cao của header MỚI (sau khi xếp chồng) */
+        /* (Bạn cần tự đo và điều chỉnh con số này) */
+        padding-top: 150px;
+    }
+}
+
+
+
+
+/* End header */

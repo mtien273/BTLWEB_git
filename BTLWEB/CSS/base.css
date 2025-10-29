@@ -1,0 +1,34 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-text: #42210B;
+    --color-bg: #F2F2F2;
+    --font: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+body {
+    /* Đặt giá trị này bằng TỔNG chiều cao của header của bạn */
+    padding-top: 0px; /* Ví dụ: 120px */
+}

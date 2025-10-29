@@ -1,0 +1,68 @@
+﻿.hero {
+    margin-top: 140px;
+    width: 100%;
+    max-width: none; /* Bỏ giới hạn 1200px */
+    padding: 0;
+}
+
+/* --- Bố cục chính --- */
+.story-section {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    min-height: 100vh; /* Luôn chiếm hết chiều cao màn hình */
+    padding: 40px 20px; /* Khoảng đệm cho màn hình nhỏ */
+}
+
+/* --- Khối nội dung được căn giữa --- */
+.story-content {
+    max-width: 800px; /* Giới hạn chiều rộng để dễ đọc hơn */
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 60px 70px;
+    text-align: center; /* Căn giữa toàn bộ text bên trong khối */
+}
+
+    /* --- Định dạng tiêu đề và nội dung --- */
+    .story-content h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.2rem;
+        color: #2c2c2c;
+        line-height: 1.3;
+        margin-bottom: 25px;
+        position: relative;
+        padding-bottom: 15px;
+    }
+
+        /* Tạo đường gạch chân trang trí và căn giữa nó */
+        .story-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%; /* Đặt ở vị trí giữa */
+            transform: translateX(-50%); /* Dịch chuyển lại 50% độ rộng của chính nó để căn giữa tuyệt đối */
+            width: 60px;
+            height: 3px;
+            background-color: #d4af37; /* Màu vàng gold tinh tế */
+        }
+
+    .story-content p {
+        margin-bottom: 20px;
+    }
+
+        .story-content p:last-child {
+            margin-bottom: 0;
+        }
+
+/* --- Responsive cho điện thoại --- */
+@media (max-width: 768px) {
+    .story-content {
+        padding: 50px 30px; /* Giảm padding trên di động */
+    }
+
+        .story-content h2 {
+            font-size: 1.8rem; /* Giảm cỡ chữ tiêu đề trên di động */
+        }
+}

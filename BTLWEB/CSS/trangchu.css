@@ -1,0 +1,554 @@
+﻿.hero {
+    margin-top: 140px;
+    width: 100%;
+    max-width: none; /* Bỏ giới hạn 1200px */
+    padding: 0;
+}
+
+.hero-slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+    .hero-slider img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+/* Chỉ cập nhật phần hero-text, giữ nguyên các style khác */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3); /* Đen mờ 50% */
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+/* Promo Images */
+.promo-images {
+    padding: 2rem 0;
+}
+
+.images-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.image-large {
+    width: 600px; /* Chiều rộng cố định 600px */
+}
+
+    .image-large img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        border: 1px solid #eee;
+        border-radius: 8px;
+    }
+
+.image-small-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-small {
+    width: 100%;
+    height: 295px; /* Hình vuông */
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+/* Promo2 */
+.promo2 {
+    padding: 2rem 0;
+}
+
+.promo2-text {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+    .promo2-text h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .promo2-text p {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+.btn-promo2 {
+    display: inline-block;
+    font-size: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+    .btn-promo2:hover {
+        color: #0056b3;
+    }
+
+.promo2-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.promo2-image {
+    flex: 1;
+    height: 350px;
+    max-width: calc((1200px - 20px) / 3); /* Chia đều chiều rộng, trừ 2 gap 10px */
+    object-fit: cover;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+/* Promo Images Reverse */
+.promo-images-reverse {
+    padding: 2rem 0;
+}
+
+.images-grid-reverse {
+    display: flex;
+    gap: 10px;
+}
+
+.image-small-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-large {
+    width: 600px; /* Chiều rộng cố định 600px */
+}
+
+    .image-large img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        border: 1px solid #eee;
+        border-radius: 8px;
+    }
+
+.image-small {
+    width: 100%;
+    height: 295px; /* Hình vuông */
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+.banner-section {
+    padding: 2rem 0;
+}
+/* banner2 */
+
+.banner-container img {
+    width: 100%;
+    height: auto; /* Giữ tỷ lệ ảnh */
+    object-fit: cover;
+}
+/* Products Section */
+.products-section {
+    padding: 3rem 0;
+    background-color: #f9f9f9; /* Nền xám nhạt nhẹ để nổi bật */
+}
+
+    .products-section h2 {
+        text-align: center;
+        font-size: 2.2rem; /* Tăng kích thước tiêu đề */
+        margin-bottom: 2.5rem;
+        color: #4A3728; /* Màu nâu đậm giống menu */
+        font-weight: bold;
+    }
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #e5e5e5; /* Viền xám nhạt */
+    border-radius: 12px; /* Bo góc mềm hơn */
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow nhẹ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Để thêm badge */
+}
+
+
+    .product-card:hover {
+        transform: translateY(-8px); /* Nâng cao hơn khi hover */
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Shadow đậm hơn */
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 250px; /* Tăng chiều cao ảnh */
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Hiệu ứng zoom ảnh */
+    }
+
+    .product-card:hover img {
+        transform: scale(1.05); /* Zoom nhẹ ảnh khi hover */
+    }
+
+    .product-card h3 {
+        font-size: 1.3rem; /* Tăng kích thước tên */
+        margin: 1rem 0 0.5rem;
+        color: #4A3728; /* Màu nâu đậm */
+        font-weight: 600;
+    }
+
+    .product-card .price {
+        color: #007BFF; /* Giữ xanh dương cho giá */
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .product-card .btn-secondary {
+        display: inline-block; /* Đảm bảo nút là inline-block */
+        margin-bottom: 0.4rem; /* Thêm margin-bottom 0.4rem để cách lề dưới 0.4rem */
+    }
+
+    /* Thêm badge "New" cho card đầu tiên (có thể chỉnh cho card khác) */
+    .product-card:first-child::before {
+        content: 'New';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #4A3728; /* Nâu đậm */
+        color: #fff;
+        padding: 0.3rem 0.8rem;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+.btn-secondary {
+    display: inline-block;
+    padding: 0.6rem 1rem; /* Tăng kích thước nút */
+    background-color: #4A3728; /* Nâu đậm thay vì xám */
+    color: #fff; /* Chữ trắng */
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    .btn-secondary:hover {
+        background-color: #007BFF; /* Đổi sang xanh dương khi hover */
+        transform: scale(1.05); /* Phóng to nhẹ */
+    }
+
+
+/* Categories Section */
+.categories {
+    padding: 3rem 0; /* Tăng padding cho thoáng */
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+    .categories h2 {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+        color: #4A3728; /* Màu nâu đậm giống menu */
+        font-weight: bold;
+    }
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem; /* Tăng gap cho rộng rãi */
+}
+
+.category-item {
+    background-color: #fff; /* Nền trắng thay vì xám nhạt */
+    padding: 1.5rem; /* Tăng padding */
+    text-decoration: none;
+    color: #4A3728; /* Màu nâu đậm */
+    font-size: 1.2rem; /* Tăng kích thước chữ */
+    font-weight: 600; /* Chữ đậm hơn */
+    border-radius: 8px; /* Bo góc mềm hơn */
+    border: 1px solid #e5e5e5; /* Viền nhẹ */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow nhẹ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative; /* Để thêm pseudo-element nếu cần */
+}
+
+    .category-item:hover {
+        background-color: #007BFF; /* Nền xanh dương khi hover */
+        color: #fff; /* Chữ trắng khi hover */
+        transform: scale(1.05); /* Phóng to nhẹ */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Shadow đậm hơn */
+    }
+
+/* Feedback Section */
+.feedback-section {
+    padding: 3rem 0;
+}
+
+    .feedback-section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.feedback-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+}
+
+    .feedback-card:hover {
+        transform: translateY(-5px);
+    }
+
+.feedback-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-content h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.feedback-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+
+/* Login Main */
+
+
+.login-section {
+    padding: 3rem 0; /* Tăng padding để thoáng */
+    width: 100%;
+    background-color: #f5f5f5; /* Nền xám nhạt từ login-main */
+    min-height: calc(100vh - 200px); /* Giữ chiều cao từ login-main */
+}
+
+/* Login Form Container - Form rộng 1200px */
+.login-form-container {
+    max-width: 1200px !important; /* Form rộng 1200px, ưu tiên cao */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid #e5e5e5;
+}
+
+
+    .login-form-container h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: #4A3728;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+    }
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+    .form-group label {
+        font-size: 1rem;
+        color: #4A3728;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+    .form-group input {
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+    }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #007BFF;
+            box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+        }
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.forgot-password {
+    color: #4A3728;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+    .forgot-password:hover {
+        color: #0056b3;
+    }
+
+.signup-link {
+    text-align: center;
+    margin-top: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+    .signup-link a {
+        color: #4A3728;
+        text-decoration: none;
+    }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+/* Button Primary - Form đăng nhập, Hero */
+.btn-primary {
+    background-color: #4A3728;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+    .btn-primary:hover {
+        color: #fff; /* Chữ trắng khi hover */
+        transform: scale(1.05); /* Phóng to nhẹ */
+    }
+
+/*  */
+/*  */
+/* Dangky Section - Thay thế register */
+/*  */
+/*  */
+
+
+.dangky-section {
+    padding: 3rem 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    min-height: calc(100vh - 200px);
+}
+
+.dangky-form-container {
+    max-width: 1200px !important; /* Form rộng 1200px */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid #e5e5e5;
+}
+
+    .dangky-form-container h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: #4A3728;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+    }
+
+.dangky-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

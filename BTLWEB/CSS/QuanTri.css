@@ -1,0 +1,211 @@
+﻿/* admin-style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F7F7F7;
+}
+
+.header {
+    background: #42210b;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1000;
+    font-size: 1.3em;
+    text-align: center; /* Căn giữa ngang */
+    line-height: 60px; /* Căn giữa dọc bằng cách khớp với chiều cao header */
+}
+
+    .header h1 {
+        margin: 0;
+        font-size: 1.3em;
+        line-height: 60px;
+    }
+
+.logout {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+    .logout:hover {
+        background: #B48F2E; /* Vàng tối hơn */
+    }
+
+.sidebar {
+    width: 200px;
+    background: #F7F7F7;
+    position: fixed;
+    top: 80px; /* Cách header 80px (60px header + 20px khoảng cách) */
+    bottom: 0;
+    color: #FFFFFF;
+    z-index: 900; /* Dưới header */
+}
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .sidebar ul li a {
+            display: block;
+            color: #000000;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background 0.3s ease;
+        }
+
+            .sidebar ul li a:hover {
+                background: #EEEEEE;
+            }
+
+            .sidebar ul li a.active {
+                background: #EEEEEE;
+                font-weight: bold;
+            }
+
+            .sidebar ul li a:focus {
+                outline: 2px solid #D4A017;
+                outline-offset: 2px;
+            }
+
+.main-content {
+    margin-left: 220px;
+    margin-top: 100px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    color: #42210b;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #FFFFFF;
+    padding: 20px;
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: 250px;
+}
+
+    .card h3 {
+        color: #D4A017;
+        margin-bottom: 10px;
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #FFFFFF;
+    margin-top: 20px;
+}
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+    }
+
+    table th {
+        background: #F7F7F7;
+        font-weight: bold;
+    }
+
+    table tr:hover {
+        background: #F9F9F9;
+    }
+
+button {
+    padding: 8px 16px;
+    background: #D4A017;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+    button:hover {
+        background: #B48F2E;
+    }
+
+    button:focus {
+        outline: 2px solid #D4A017;
+        outline-offset: 2px;
+    }
+
+.btn-add {
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    background: #5cb85c;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+    .btn-add:hover {
+        background: #4a9d4a;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 15px;
+        font-size: 1.1em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .logout {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        top: 0;
+    }
+
+        .sidebar ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+            .sidebar ul li {
+                flex: 1;
+                min-width: 100px;
+            }
+
+    .main-content {
+        margin-left: 0;
+        margin-top: 60px; /* Cách header 60px trên mobile */
+        padding: 10px;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+}

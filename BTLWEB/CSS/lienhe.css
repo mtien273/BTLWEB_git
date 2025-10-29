@@ -1,0 +1,95 @@
+﻿.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 120px; /* khoảng cách so với header */
+    padding: 60px 80px;
+    gap: 60px;
+    background-color: #fff;
+}
+
+/* Hai cột cân đối */
+.contact-left, .contact-right {
+    flex: 1;
+    min-width: 350px;
+}
+
+    /* Bên trái */
+    .contact-left h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2E1C11;
+        margin-bottom: 20px;
+    }
+
+    .contact-left input,
+    .contact-left textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 12px 14px;
+        margin-bottom: 18px;
+        font-size: 15px;
+        transition: all 0.2s ease;
+    }
+
+        .contact-left input:focus,
+        .contact-left textarea:focus {
+            border-color: #2E1C11;
+            box-shadow: 0 0 4px rgba(46, 28, 17, 0.3);
+            outline: none;
+        }
+
+    .contact-left textarea {
+        height: 130px;
+        resize: none;
+    }
+
+    /* Nút gửi căn sang trái và nổi bật */
+    .contact-left button {
+        background-color: #2E1C11;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 28px;
+        cursor: pointer;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        transition: 0.3s;
+        display: block;
+        margin-left: 0; /* nằm bên trái */
+    }
+
+        .contact-left button:hover {
+            background-color: #4b2c1a;
+            transform: translateY(-2px);
+        }
+
+    /* Bên phải */
+    .contact-right h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2E1C11;
+        margin-bottom: 20px;
+    }
+
+    .contact-right p {
+        line-height: 1.8;
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .contact-right b {
+        color: #2E1C11;
+    }
+
+/* Giữa hai bên đối xứng hoàn toàn */
+@media (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+}
