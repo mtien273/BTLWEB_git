@@ -56,6 +56,7 @@
         <!-- End header -->
 
         <!-- Main Content - Register Form -->
+    <form id="form1" runat="server">
         <main class="dangky-main">
             <div class="container">
                 <section class="dangky-section">
@@ -101,7 +102,7 @@
                 </section>
             </div>
         </main>
-
+</form>
         <!-- Footer -->
         <footer class="footer">
             <div class="inner-wrap">

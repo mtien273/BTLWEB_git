@@ -65,6 +65,7 @@
         </section>
 
         <!-- Main Content - Login Form -->
+    <form id="form1" runat="server">
         <main class="login-main">
             <div class="container">
                 <section class="login-section">
@@ -96,7 +97,7 @@
                 </section>
             </div>
         </main>
-
+</form>
 
         <!-- Footer -->
         <footer class="footer">
