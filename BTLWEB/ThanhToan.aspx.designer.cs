@@ -13,5 +13,23 @@ namespace BTLWEB
 
     public partial class ThanhToan
     {
+
+        /// <summary>
+        /// orderList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl orderList;
+
+        /// <summary>
+        /// formThanhToan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm formThanhToan;
     }
 }

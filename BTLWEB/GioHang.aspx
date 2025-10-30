@@ -88,51 +88,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                <img
-                                    src="./img/promo_img2.png"
-                                    alt="Nhẫn Vàng"
-                                    class="product-img" />
-                            </td>
-                            <td>VWR012BARM.WY06A</td>
-                            <td>
-                                <div class="quantity-selector">
-                                    <button class="qty-btn">-</button>
-                                    <input type="text" value="2" class="qty-input" />
-                                    <button class="qty-btn">+</button>
-                                </div>
-                            </td>
-                            <td class="price">10.200.000 vnd</td>
-                            <td>
-                                <button class="delete-btn">🗑️</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="./img/promo_img3.jpg" alt="Nhẫn Bạc" class="product-img" />
-                            </td>
-                            <td>VWR0313BARM.WG06A</td>
-                            <td>
-                                <div class="quantity-selector">
-                                    <button class="qty-btn">-</button>
-                                    <input type="text" value="1" class="qty-input" />
-                                    <button class="qty-btn">+</button>
-                                </div>
-                            </td>
-                            <td class="price">11.540.000 vnd</td>
-                            <td>
-                                <button class="delete-btn">🗑️</button>
-                            </td>
-                        </tr>
+                        <%= CartHtml %>
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3" class="total-label">Tổng tiền:</td>
-                            <td class="total-price">21.740.000 vnd</td>
-                            <td></td>
-                        </tr>
-                    </tfoot>
                 </table>
                 <div class="cart-actions">
                     <button class="order-btn"><a style="color: #fff" href="ThanhToan.aspx">Đặt hàng</a></button>

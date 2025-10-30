@@ -133,6 +133,7 @@
     <Content Include="JS\DangKi.js" />
     <Content Include="JS\DangNhap.js" />
     <Content Include="JS\Header.js" />
+    <Content Include="JS\ThanhToan.js" />
     <Content Include="LienHe.aspx" />
     <Content Include="NhanBac.aspx" />
     <Content Include="Quantri.aspx" />

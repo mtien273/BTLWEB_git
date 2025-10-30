@@ -110,7 +110,7 @@
     }
 
     .form-group input[type="text"],
-    .form-group input[type="email"],
+    .form-group input[type="tel"],
     .form-group textarea {
         width: 100%;
         padding: 10px;
@@ -160,6 +160,14 @@
     .btn-submit:hover {
         background-color: #0056b3;
     }
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 4px;
+}
 
 /* Responsive cho màn hình nhỏ hơn (Tablet và Mobile) */
 @media (max-width: 800px) {

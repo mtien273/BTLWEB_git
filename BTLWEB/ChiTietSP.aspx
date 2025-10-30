@@ -134,9 +134,7 @@
                             <input type="hidden" id="inputQty" name="qty" />
 
                             <div class="action-buttons">
-                                <button type="button" class="btn-inbox">
-                                    <a style="color: #fff" href="ThanhToan.aspx">Mua Ngay</a>
-                                </button>
+
 
                                 <button type="submit" class="btn-favorite" onclick="return prepareAddToCart();">
                                     Thêm vào giỏ hàng

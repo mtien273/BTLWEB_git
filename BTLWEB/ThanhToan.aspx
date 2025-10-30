@@ -76,39 +76,41 @@
         <!-- End header -->
         <div class="checkout-layout">
 
-            <div class="product-summary">
-                <h2>Đơn hàng của bạn</h2>
-                <div class="product-item">
-                    <img src="img/products-section1.jpg" alt="Tên Sản Phẩm">
-                    <div class="item-details">
-                        <h3>Vòn tay</h3>
-                        <p>Số lượng: 1</p>
-                        <p>Giá: 500.000 VNĐ</p>
-                    </div>
-                </div>
-                <div class="order-total">
-                    <p>Tổng cộng:</p>
-                    <h3>500.000 VNĐ</h3>
-                </div>
+        <div class="product-summary">
+            <h2>Đơn hàng của bạn</h2>
+
+            <div id="orderList" runat="server">
+                <%= OrderHtml %>
             </div>
 
+            <div class="order-total">
+                <p>Tổng cộng:</p>
+                <h3><%= TotalHtml %></h3>
+            </div>
+        </div>
+
+
             <div class="payment-form-container">
-                <form id="formThanhToan" action="#" method="post">
+    <form id="formThanhToan" runat="server" method="post" onsubmit="return validateThanhToan();">
+
                     <h1>Thông Tin Thanh Toán</h1>
 
                     <div class="form-group">
                         <label for="hoTen">Họ và tên:</label>
                         <input type="text" id="hoTen" name="hoTen" required>
+                        <span id="error-name" class="error-message"></span>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Số Điện thoại:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Số Điện thoại:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span id="error-phone" class="error-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="diaChi">Địa chỉ giao hàng:</label>
                         <textarea id="diaChi" name="diaChi" rows="3" required></textarea>
+                        <span id="error-address" class="error-message"></span>
                     </div>
 
                     <div class="form-group">
@@ -187,7 +189,7 @@
         </footer>
         <!--End Footer -->
 
-
+    <script src="JS/ThanhToan.js"></script>
     <script src="JS/Header.js"></script>
 </body>
 </html>
