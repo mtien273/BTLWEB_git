@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NhanBac.aspx.cs" Inherits="BTLWEB.NhanBac" MaintainScrollPositionOnPostback="true" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BongTaiBac.aspx.cs" Inherits="BTLWEB.DayChuyenBac" MaintainScrollPositionOnPostback="true" %>
 
 <!DOCTYPE html>
 
@@ -81,8 +81,8 @@
         <div class="container">
             <!-- Products Section -->
             <section class="products-section">
-                <p class="breadcrumb">TRANG CHỦ / NHẪN BẠC / RING</p>
-                <h2>[NHẪN BẠC] CAO CẤP HÀ NỘI - MoJi (507 sản phẩm)</h2>
+            <p class="breadcrumb">TRANG CHỦ / DÂY CHUYỀN BẠC / EARRINGS</p>
+            <h2>[DÂY CHUYỀN BẠC] CAO CẤP HÀ NỘI - MoJi</h2>
                 <div class="sort-container">
                    
                 </div>
@@ -97,12 +97,12 @@
                         </ul>
                     </aside>
                     <div class="products-grid">
-                        <asp:Repeater ID="rptNhanBac" runat="server">
+                        <asp:Repeater ID="rptDayChuyenBac" runat="server">
                             <ItemTemplate>
                                 <div class="product-card">
                                     <a href='ChiTietSP.aspx?ma=<%# Eval("MaSP") %>'>
 
-                                        <img src='img/NhanBac/<%# Eval("Images[0]") %>' alt='<%# Eval("TenSP") %>' />
+                                        <img src='img/DayChuyenBac/<%# Eval("Images[0]") %>' alt='<%# Eval("TenSP") %>' />
 
                                         <h3><%# Eval("TenSP") %></h3>
 

@@ -75,7 +75,7 @@ namespace BTLWEB
                     Type="BongTaiBac",
                     XuatXu="Việt Nam",
                     SoLuong=150,
-                    Images = new List<string> {"images/bongtai/btb1_1.jpg"},
+                    Images = new List<string> {"images/bongtai/btb1_1.jpg","images/bongtai/btb1_2.jpg"},
                     Desc="Bông tai nụ cơ bản, chốt cài chắc chắn, đá CZ lấp lánh 6 chấu.",
                     Gia=190000,
                     DaBan=95

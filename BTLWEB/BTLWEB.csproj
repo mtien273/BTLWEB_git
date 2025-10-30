@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BongTaiBac.aspx" />
     <Content Include="BoSuuTap.aspx" />
     <Content Include="ChiTietSP.aspx" />
     <Content Include="CSS\QuanTri.css" />
@@ -82,6 +83,7 @@
     <Content Include="CSS\ThongTin.css" />
     <Content Include="DangKi.aspx" />
     <Content Include="DangNhap.aspx" />
+    <Content Include="DayChuyenBac.aspx" />
     <Content Include="GioHang.aspx" />
     <Content Include="Global.asax" />
     <Content Include="img\avt_user.png" />
@@ -162,8 +164,16 @@
     <Content Include="Vendor\css\v5-font-face.css" />
     <Content Include="Vendor\css\v5-font-face.min.css" />
     <Content Include="Web.config" />
+    <Content Include="LacBac.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BongTaiBac.aspx.cs">
+      <DependentUpon>BongTaiBac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BongTaiBac.aspx.designer.cs">
+      <DependentUpon>BongTaiBac.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BoSuuTap.aspx.cs">
       <DependentUpon>BoSuuTap.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -191,6 +201,13 @@
     </Compile>
     <Compile Include="DangNhap.aspx.designer.cs">
       <DependentUpon>DangNhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DayChuyenBac.aspx.cs">
+      <DependentUpon>DayChuyenBac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DayChuyenBac.aspx.designer.cs">
+      <DependentUpon>DayChuyenBac.aspx</DependentUpon>
     </Compile>
     <Compile Include="GioHang.aspx.cs">
       <DependentUpon>GioHang.aspx</DependentUpon>
@@ -254,6 +271,13 @@
       <DependentUpon>TrangTimKiem.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="LacBac.aspx.cs">
+      <DependentUpon>LacBac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LacBac.aspx.designer.cs">
+      <DependentUpon>LacBac.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -268,7 +292,11 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="img\BongTaiBac\" />
+    <Folder Include="img\DayChuyenBac\" />
+    <Folder Include="img\LacBac\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

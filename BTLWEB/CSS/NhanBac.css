@@ -1,6 +1,4 @@
-﻿
-
-/* Hero Banner */
+﻿/* Hero Banner */
 .hero {
     margin-top: 140px;
     width: 100%;
@@ -60,6 +58,7 @@
 .products-section {
     padding: 3rem 0;
     background-color: var(--color-bg);
+    margin-top: 80px; /* tạo khoảng cách với header (thường header có position: fixed) */
 }
 
 .breadcrumb {

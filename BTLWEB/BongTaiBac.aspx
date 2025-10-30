@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NhanBac.aspx.cs" Inherits="BTLWEB.NhanBac" MaintainScrollPositionOnPostback="true" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BongTaiBac.aspx.cs" Inherits="BTLWEB.BongTaiBac" MaintainScrollPositionOnPostback="true" %>
 
 <!DOCTYPE html>
 
@@ -81,8 +81,8 @@
         <div class="container">
             <!-- Products Section -->
             <section class="products-section">
-                <p class="breadcrumb">TRANG CHỦ / NHẪN BẠC / RING</p>
-                <h2>[NHẪN BẠC] CAO CẤP HÀ NỘI - MoJi (507 sản phẩm)</h2>
+            <p class="breadcrumb">TRANG CHỦ / BÔNG TAI BẠC / EARRINGS</p>
+            <h2>[BÔNG TAI BẠC] CAO CẤP HÀ NỘI - MoJi</h2>
                 <div class="sort-container">
                    
                 </div>
@@ -97,7 +97,7 @@
                         </ul>
                     </aside>
                     <div class="products-grid">
-                        <asp:Repeater ID="rptNhanBac" runat="server">
+                        <asp:Repeater ID="rptBongTaiBac" runat="server">
                             <ItemTemplate>
                                 <div class="product-card">
                                     <a href='ChiTietSP.aspx?ma=<%# Eval("MaSP") %>'>
