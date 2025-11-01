@@ -1,0 +1,146 @@
+﻿
+.success-container {
+    padding: 8rem 1rem 6rem;
+    background: linear-gradient(135deg, #f5f0eb 0%, #e8e0d8 100%);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.success-card {
+    background: #fff;
+    max-width: 500px;
+    width: 100%;
+    padding: 3rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(74, 55, 40, 0.12);
+    border: 1px solid #ddd;
+    animation: fadeInUp 0.7s ease-out;
+}
+
+/* CHECKMARK TỰ VẼ BẰNG CSS - KHÔNG DÙNG MẠNG */
+.success-icon {
+    width: 90px;
+    height: 90px;
+    background: #e8f5e9;
+    color: #4A3728;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    position: relative;
+    font-weight: bold;
+    font-size: 2.5rem;
+    box-shadow: 0 4px 15px rgba(74, 55, 40, 0.15);
+}
+
+    /* Dấu tích CSS */
+    .success-icon::before {
+        content: "✓";
+        font-size: 3rem;
+        font-weight: 300;
+        color: #1055C9;
+        position: absolute;
+    }
+
+.success-card h1 {
+    font-size: 2rem;
+    color: #4A3728;
+    margin: 0 0 1rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.success-card p {
+    color: #5d4a3b;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0.8rem 0;
+}
+
+.ma-don {
+    background: #f8f1e9;
+    color: #4A3728;
+    font-weight: 700;
+    font-size: 1.35rem;
+    padding: 0.9rem 1.8rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 1.8rem 0;
+    border: 2px dashed #4A3728;
+    letter-spacing: 1.2px;
+    font-family: monospace;
+}
+
+.btn-home {
+    display: inline-block;
+    background: #4A3728;
+    color: #fff;
+    padding: 1rem 2.8rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 18px rgba(74, 55, 40, 0.25);
+    border: none;
+    cursor: pointer;
+}
+
+    .btn-home:hover {
+        background: #3a2a1e;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(74, 55, 40, 0.35);
+    }
+
+/* Animation mượt */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========================
+   RESPONSIVE - HOÀN TOÀN OFFLINE
+=========================== */
+@media (max-width: 576px) {
+    .success-card {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+        border-radius: 14px;
+    }
+
+        .success-card h1 {
+            font-size: 1.7rem;
+        }
+
+    .success-icon {
+        width: 75px;
+        height: 75px;
+    }
+
+        .success-icon::before {
+            font-size: 2.5rem;
+        }
+
+    .ma-don {
+        font-size: 1.2rem;
+        padding: 0.7rem 1.4rem;
+    }
+
+    .btn-home {
+        padding: 0.9rem 2.2rem;
+        font-size: 0.95rem;
+    }
+}

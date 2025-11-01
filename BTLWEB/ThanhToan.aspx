@@ -97,19 +97,19 @@
 
                     <div class="form-group">
                         <label for="hoTen">Họ và tên:</label>
-                        <input type="text" id="hoTen" name="hoTen" required>
+                        <input type="text" id="hoTen" name="hoTen" runat="server" required>
                         <span id="error-name" class="error-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="phone">Số Điện thoại:</label>
-                        <input type="tel" id="phone" name="phone" required>
+                        <input type="tel" id="phone" name="phone" runat="server" required>
                         <span id="error-phone" class="error-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="diaChi">Địa chỉ giao hàng:</label>
-                        <textarea id="diaChi" name="diaChi" rows="3" required></textarea>
+                        <textarea id="diaChi" name="diaChi" rows="3" runat="server" required></textarea>
                         <span id="error-address" class="error-message"></span>
                     </div>
 

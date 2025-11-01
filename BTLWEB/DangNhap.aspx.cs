@@ -91,7 +91,7 @@ namespace BTLWEB
                     }
                 }
 
-                Response.Redirect("TrangChu.aspx");
+                Response.Redirect("Account.aspx");
             }
             else
             {

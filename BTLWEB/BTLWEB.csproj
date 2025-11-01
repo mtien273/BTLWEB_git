@@ -69,9 +69,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Account.aspx" />
     <Content Include="BongTaiBac.aspx" />
     <Content Include="BoSuuTap.aspx" />
     <Content Include="ChiTietSP.aspx" />
+    <Content Include="CSS\Account.css" />
     <Content Include="CSS\QuanTri.css" />
     <Content Include="CSS\BoSuuTap.css" />
     <Content Include="CSS\ChiTietSP.css" />
@@ -82,6 +84,7 @@
     <Content Include="CSS\lienhe.css" />
     <Content Include="CSS\NhanBac.css" />
     <Content Include="CSS\ThanhToan.css" />
+    <Content Include="CSS\ThanhToanThanhCong.css" />
     <Content Include="CSS\ThongTin.css" />
     <Content Include="DangKi.aspx" />
     <Content Include="DangNhap.aspx" />
@@ -170,6 +173,13 @@
     <Content Include="LacBac.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BongTaiBac.aspx.cs">
       <DependentUpon>BongTaiBac.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

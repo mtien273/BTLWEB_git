@@ -76,39 +76,25 @@
                 </tbody>
             </table>
         </div>
-
-        <!-- Orders View -->
-        <div id="ordersView" runat="server" visible="false">
-            <h2>Danh sách đơn hàng</h2>
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>Mã đơn</th>
-                        <th>Khách hàng</th>
-                        <th>Ngày đặt</th>
-                        <th>Tổng tiền</th>
-                        <th>Trạng thái</th>
-                    </tr>
-                </thead>
-                <tbody id="ordersTableBody" runat="server">
-                    <tr>
-                        <td>DH001</td>
-                        <td>Nguyễn Văn A</td>
-                        <td>15/10/2025</td>
-                        <td>7,000,000₫</td>
-                        <td>Đang xử lý</td>
-                    </tr>
-                    <tr>
-                        <td>DH002</td>
-                        <td>Trần Thị B</td>
-                        <td>16/10/2025</td>
-                        <td>3,500,000₫</td>
-                        <td>Hoàn thành</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
+<!-- Orders View -->
+<div id="ordersView" runat="server" visible="false">
+    <h2>Danh sách đơn hàng</h2>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Mã đơn</th>
+                <th>Tên sản phẩm</th>
+                <th>Tên khách hàng</th>
+                <th>Ngày đặt</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái</th>
+            </tr>
+        </thead>
+        <tbody id="ordersTableBody" runat="server">
+            <!-- DỮ LIỆU SẼ ĐƯỢC C# TẠO ĐỘNG -->
+        </tbody>
+    </table>
+</div>
         <!-- Customers View -->
         <div id="customersView" runat="server" visible="false">
             <h2>Danh sách người dùng</h2>

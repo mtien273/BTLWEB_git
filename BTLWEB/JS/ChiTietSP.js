@@ -36,6 +36,7 @@ function prepareAddToCart() {
         return false; // Ngăn không cho form submit
     }
 
+
     // Lấy số lượng
     const quantity = document.getElementById("qty").value;
 
@@ -45,3 +46,4 @@ function prepareAddToCart() {
 
     return true; // Cho phép form submit
 }
+

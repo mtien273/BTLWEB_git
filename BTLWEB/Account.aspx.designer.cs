@@ -11,52 +11,61 @@ namespace BTLWEB
 {
 
 
-    public partial class ThanhToan
+    public partial class Account
     {
 
         /// <summary>
-        /// orderList control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl orderList;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// formThanhToan control.
+        /// lblHoTen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formThanhToan;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblHoTen;
 
         /// <summary>
-        /// hoTen control.
+        /// lblSDT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText hoTen;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblSDT;
 
         /// <summary>
-        /// phone control.
+        /// lblDiaChi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl phone;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblDiaChi;
 
         /// <summary>
-        /// diaChi control.
+        /// btnDangXuat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea diaChi;
+        protected global::System.Web.UI.WebControls.Button btnDangXuat;
+
+        /// <summary>
+        /// orderHistory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl orderHistory;
     }
 }

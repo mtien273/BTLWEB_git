@@ -218,6 +218,9 @@ namespace BTLWEB
                 }
             };
             Application["DS_SanPham"] = dsSP;
+            //  Khởi tạo DS_DonHang
+            if (Application["DS_DonHang"] == null)
+                Application["DS_DonHang"] = new List<Dictionary<string, object>>();
         }
 
         protected void Session_Start(object sender, EventArgs e)
